@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prac_HTML</title>
+  </head>
+  <body>
+    <div id="1" style="height: 100vh">
+      <a href="#2">go to 2</a>
+      <h1 style="text-align: cente">Go to page 2 to explore new stuffs</h1>
+    </div>
+    <div id="2" style="height: 100vh; background-color: #fff">
+      <a href="#1">go to 1</a>
+      <h1 title="heading h1">h1 to h6</h1>
+      <p style="color: gray; text-decoration: underline">paragraph tag</p>
+      <hr />
+      <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+      >
+        Click me to display Date and Time.
+      </button>
+      <button onclick="sayHello()">click me to check</button>
+      <p id="hell"></p>
+
+      <p id="demo"></p>
+      <hr />
+      <p>
+        paragraph 2 <br />
+        used br
+      </p>
+      <pre title="use of pre tag">
+  span1
+        span 2 span3
+                span 4
+    <em>pretty unsure with em</em>
+    <small> smaller the element</small>
+    <mark>h</mark><del>fruirts</del><ins>fruits</ins> <mark>hi</mark>
+    </pre>
+      <!-- comment -->
+      <img
+        src="https://www.w3schools.com/images/colorpicker2000.png"
+        alt="img"
+        width="300px"
+        height="200px"
+      />
+      <img
+        src="https://www.w3schools.com/images/colorpicker2000.png"
+        alt="img"
+        width="300px"
+        height="200px"
+        style="float: right"
+      />
+      <a href="#" target="_blank">_blank</a>
+      <a href="#" target="__blank">__b</a>
+      <a href="#" target="_self">self</a>
+      <a href="#">without self</a>
+      <a href="#" target="_parent">parent</a>
+      <a href="#" target="_top">top</a>
+      <button
+        onclick="document.location='index.html'"
+        title="checking this out"
+      >
+        a_btn
+      </button>
+      <iframe
+        src="https://www.w3schools.com"
+        height="200"
+        width="300"
+        title="Iframe Example"
+      ></iframe>
+    </div>
+    <script>
+      function sayHello() {
+        document.getElementById("hell").innerHTML = "you clicked";
+      }
+    </script>
+  </body>
+</html>
